@@ -7,8 +7,7 @@ name: Docker Series Builds
 on:
   push:
     branches: [ "main" ]
-    paths:
-      - 'main.yml'
+
 jobs:
   build:
     runs-on: ubuntu-latest
