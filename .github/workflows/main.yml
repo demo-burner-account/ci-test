@@ -22,7 +22,8 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: docker build nodejs
       run: |
-        docker build . -t demoburneraccount/ci-testing:1.1
+        CONTAINER_IMAGE_TAG=1.0
+        docker build . -t demoburneraccount/ci-testing:$CONTAINER_IMAGE_TAG
     - name: docker push
       run: |
-        docker push demoburneraccount/ci-testing:1.0
+        docker push demoburneraccount/ci-testing:$CONTAINER_IMAGE_TAG
