@@ -8,7 +8,7 @@ const HOST = '0.0.0.0';
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Testing CI part 2 \n');
+  res.send('Testing CI part 3 \n');
 });
 
 
