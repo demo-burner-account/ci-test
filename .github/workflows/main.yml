@@ -2,7 +2,7 @@
 # Rename the file extension to ".yaml" (remove "_") to enable
 ###########################################################
 
-name: Docker Series Builds
+name: CI test nodejs app
 
 on:
   push:
